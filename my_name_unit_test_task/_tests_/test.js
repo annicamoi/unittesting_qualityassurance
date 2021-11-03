@@ -120,7 +120,7 @@ test('id 2 TOTAL price is 124', () => {
   expect(new Prod(prods).getTotalPrice(2)).toEqual(124)
 })
 test('throw, when no product with such id', () => {
-  expect(() => new Prod(prods).getPriceWithoutExtras(123000)).toThrow('nothing found with given id')
+  expect(() => new Prod(prods).getTotalPrice(123000)).toThrow('nothing found with given id')
 })
 
 
